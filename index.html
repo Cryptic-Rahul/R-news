@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>News App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="main-nav container flex">
+				<a href="#" onclick="reload()" class="company-logo"
+					><img src="news2.png" alt="comapany logo"
+				/></a>
+				<div class="nav-links">
+					<ul class="flex">
+						<li
+							class="hover-link nav-item"
+							id="science"
+							onclick="onNavItemClick('science')"
+						>
+							Science
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="crypto"
+							onclick="onNavItemClick('crypto')"
+						>
+							Crypto
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="sports"
+							onclick="onNavItemClick('sports')"
+						>
+							Sports
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="currency"
+							onclick="onNavItemClick('currency')"
+						>
+							Currency
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="weather"
+							onclick="onNavItemClick('weather')"
+						>
+							Weather
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="tech"
+							onclick="onNavItemClick('tech')"
+						>
+							Tech
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="ai"
+							onclick="onNavItemClick('ai')"
+						>
+							AI
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="vehicle"
+							onclick="onNavItemClick('vehicle')"
+						>
+							Vehicle
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="politics"
+							onclick="onNavItemClick('politics')"
+						>
+							Politics
+						</li>
+						<li
+							class="hover-link nav-item"
+							id="others"
+							onclick="onNavItemClick('others')"
+						>
+							Others
+						</li>
+					</ul>
+				</div>
+				<div class="search-bar flex">
+					<input
+						type="text"
+						class="news-input"
+						id="search-text"
+						placeholder="e.g Food "
+					/>
+					<button class="search-button" id="search-button">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container card-container flex" id="cards-container"></div>
+		</main>
+
+		<template id="template-news-card">
+			<div class="card">
+				<div class="card-header">
+					<img
+						src="https://via.placeholder.com/400x200"
+						alt="news image"
+						id="news-img"
+					/>
+				</div>
+				<div class="card-content">
+					<h3 id="news-title">This is the Title</h3>
+					<h6 class="news-source" id="news-source">End Gadget 27/07/2023</h6>
+					<p class="news-desc" id="news-desc">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+						repellat recusandae id tempore saepe, beatae reiciendis obcaecati
+						harum rerum. Distinctio?
+					</p>
+				</div>
+			</div>
+		</template>
+
+		<script src="script.js"></script>
+		<script
+			src="https://kit.fontawesome.com/e381bd3e11.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
